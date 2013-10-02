@@ -5,7 +5,7 @@ app.set("view options", {layout: false});
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
-  response.send('index.html');
+  response.send('./public/index.html');
 });
 
 var port = process.env.PORT || 5000;
